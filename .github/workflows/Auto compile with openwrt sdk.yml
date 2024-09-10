@@ -228,6 +228,10 @@ jobs:
           - platform: mipsel_mips32
             url_sdk: https://downloads.openwrt.org/releases/23.05.0/targets/bcm47xx/generic/openwrt-sdk-23.05.0-bcm47xx-generic_gcc-12.3.0_musl.Linux-x86_64.tar.xz
 
+          - platform: 360t7
+            url_sdk: https://mirror-03.infra.openwrt.org/releases/23.05.4/targets/mediatek/filogic/openwrt-sdk-23.05.4-mediatek-filogic_gcc-12.3.0_musl.Linux-x86_64.tar.xz
+            
+
     steps:
       - name: Initialization ${{ matrix.platform }} compile environment
         run: |
